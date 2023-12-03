@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptIt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prompt-It</h1>
+        <div id="promptsContainer">
+            <div class="prompt-wrapper">
+                <span class="prompt-number">1) </span>
+                <div id="promptInput" contenteditable="true" class="prompt" data-placeholder="Write your prompt..."></div>
+            </div> <!-- Closing div for prompt-wrapper -->
+            <!-- Additional prompts will be added here -->
+        </div>
+        <div class="buttonContainer">
+            <button id="copyButton" class="icon-button" title="Copy to Clipboard">📋</button>
+            <input type="text" id="copyPromptNumberInput" class="filename-input" placeholder="Enter prompt number..." style="display: none;">
+            <button id="submitCopyButton" class="icon-button" style="display: none;">Copy</button>
+            <button id="saveButton" class="icon-button" title="Save as Text File">💾</button>
+            <input type="text" id="filenameInput" class="filename-input" placeholder="Enter filename" style="display: none;">
+            <button id="submitFilenameButton" class="icon-button" style="display: none;">Save</button>
+            <button id="fullscreenButton" class="icon-button" title="Toggle Full Screen">↗️</button>
+            <button id="deleteButton" class="icon-button" title="Deletes current prompt">❌</button>
+            <button id="doneButton" class="icon-button" title="Creates new prompt alter\nshift+enter">✅</button>
+            <button id="helpButton"class="icon-button" title="Press Esc + h" style="position: absolute; top: 2rem; right: 2rem;">🛈</button>
+        </div>
+        <div id="helpPanel" class="help-panel" style="display: none;">
+<!-- Key Bindings Section -->
+<h2>Key Bindings</h2>
+<table>
+    <tr>
+        <th>Key</th>
+        <th>Function</th>
+    </tr>
+    <tr>
+        <td><b>Shift+Enter:</b></td>
+        <td>Adds new prompt cell</td>
+    </tr>
+    <tr>
+        <td><b>Backspace:</b></td>
+        <td>Deletes the cell if it's empty</td>
+    </tr>
+    <tr>
+        <td><b>Ctrl+Arrow Up:</b></td>
+        <td>Moves to previous prompt</td>
+    </tr>
+    <tr>
+        <td><b>Ctrl+Arrow Down:</b></td>
+        <td>Moves to next prompt</td>
+    </tr>
+    <tr>
+        <td><b>Ctrl+Arrow Right:</b></td>
+        <td>Moves to extreme right of prompt</td>
+    </tr>
+    <tr>
+        <td><b>Ctrl+Arrow Left:</b></td>
+        <td>Moves to extreme left of prompt</td>
+    </tr>
+
+</table>
+
+<!-- Icons Functions Section -->
+<h2>Icons Functions</h2>
+<table>
+    <tr>
+        <th>Function</th>
+        <th>Description</th>
+        <th>Icon</th>
+    </tr>
+    <tr>
+        <td>Copy Prompt</td>
+        <td> use prompt number,range(-) or sep by commas</td>
+        <td><span title="Copy">📋</span></td>
+    </tr>
+    <tr>
+        <td>Save Prompts</td>
+        <td>Save the content of all prompts to a file.</td>
+        <td><span title="Save">💾</span></td>
+    </tr>
+    <tr>
+        <td>Fullscreen Toggle</td>
+        <td>Toggle fullscreen mode for distraction-free editing.</td>
+        <td><span title="Fullscreen">↗️</span></td>
+    </tr>
+    <tr>
+        <td>Delete Prompt</td>
+        <td>Delete the currently focused prompt cell.</td>
+        <td><span title="Delete">❌</span></td>
+    </tr>
+    <tr>
+        <td>New Prompt</td>
+        <td>Create a new prompt cell.</td>
+        <td><span title="New Prompt">✅</span></td>
+    </tr>
+</table>
+
+            <button class="icon-button" onclick="closeHelp()">Close Help</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

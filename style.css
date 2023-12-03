@@ -1,0 +1,167 @@
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.prompt, #promptInput {
+    caret-color: whitesmoke;
+    width: 100%;
+    min-height: 150px;
+    background-color: black;
+    color: grey;
+    font-size: 3em;
+    border: none;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+}
+
+.prompt:focus, #promptInput:focus {
+    color: white;
+    outline: none;
+}
+
+.prompt:empty:before, #promptInput:empty:before {
+    content: attr(data-placeholder);
+    color: grey;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.icon-button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.icon-button:hover {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .prompt, #promptInput {
+        font-size: 2.5em;
+    }
+    .icon-button {
+        padding: 8px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .prompt, #promptInput {
+        font-size: 2em;
+    }
+    .icon-button {
+        padding: 7px;
+        font-size: 1em;
+    }
+}
+
+.prompt-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.prompt-number {
+    margin-right: 10px;
+    color: white;
+    font-size: 3em;
+}
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filename-input {
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid white;
+    color: white;
+    background: black;
+    border-radius: 10px;
+}
+
+.help-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.help-panel h2 {
+    margin-top: 0;
+}
+
+.help-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.help-panel li {
+    margin-bottom: 10px;
+}
+.help-panel table {
+    width: 100%; /* Full width of the panel */
+    border-collapse: collapse; /* Removes space between borders */
+    margin-top: 20px; /* Spacing above the table */
+    font-size: 1em; /* Adjust as needed */
+}
+
+.help-panel th, .help-panel td {
+    border: 1px solid white; /* White border for cells */
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+    color: white; /* Text color */
+}
+
+.help-panel th {
+    background-color: #444; /* Darker background for headers */
+    color: #FFF; /* White text for headers */
+}
+
+.help-panel tr:nth-child(even) {
+    background-color: #333; /* Alternate row colors for readability */
+}
+
+.help-panel tr:nth-child(odd) {
+    background-color: #222; /* Alternate row colors for readability */
+}
