@@ -165,3 +165,17 @@ h1 {
 .help-panel tr:nth-child(odd) {
     background-color: #222; /* Alternate row colors for readability */
 }
+#helpPanel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    max-height: 80vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
