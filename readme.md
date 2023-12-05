@@ -1,4 +1,4 @@
-# [PromptIt Website](https://rizamohammadkhan.github.io/promptIt/)
+# [PromptIt Website](https://rizamohammadkhan.github.io/promptItWebsite/)
 ## Introduction
 Welcome to PromptIt, a simple web application designed for managing and creating prompts effortlessly. This README provides an overview of the website's structure, features, and key functionalities.
 
