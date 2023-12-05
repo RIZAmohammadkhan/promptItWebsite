@@ -43,7 +43,7 @@ The website uses a dark theme with a clear and readable font. The styling is res
 The website utilizes JavaScript for dynamic functionalities, including creating and managing prompts, copying, saving, and handling key events.
 
 ## Contributing
-Feel free to contribute to the development of PromptIt by opening issues or submitting pull requests on the [GitHub repository](https://github.com/your-username/your-repository).
+Feel free to contribute to the development of PromptIt by opening issues or submitting pull requests on the [GitHub repository](https://github.com/RIZAmohammadkhan/promptIt_website).
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
